@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hfad.iak_satriya.MainActivity">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:id="@+id/user_layout"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imgMovie"
+                        android:src="@mipmap/ic_launcher"
+                        android:adjustViewBounds="false"
+                        android:scaleType="center" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageButton
+                            android:layout_width="100px"
+                            android:layout_height="100px"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/ic_share_black_18dp"
+                            android:id="@+id/share_button"
+                             />
+
+                    </RelativeLayout>
+
+
+
+                    <TextView
+                        android:id="@+id/txtJudul"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="#96000000"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="CardView"
+                        android:textAlignment="center"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#ffffffff"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_below="@+id/user_layout"
+                    android:orientation="vertical"
+                    android:id="@+id/linearLayout">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="deskripsi"
+                        android:id="@+id/txtDeskripsi"
+                        android:layout_below="@+id/list_title"
+                        android:textSize="14sp"
+                        android:gravity="center_vertical"
+                        android:textColor="#96000000"
+                        android:padding="10dp"
+                        android:layout_gravity="bottom" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:text="tahun"
+                        android:id="@+id/txtTahun"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+
+                <TableLayout
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearLayout"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/tabel">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/isfa"
+                            android:src="@android:drawable/star_off"
+                            android:adjustViewBounds="true"
+                            android:scaleType="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/txtVote"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="6.6 / 100"
+                            android:paddingTop="5dp"
+                            android:textSize="13dp"
+                            android:paddingBottom="20dp"
+                            android:padding="2dp"/>
+
+                    </TableRow>
+                </TableLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
